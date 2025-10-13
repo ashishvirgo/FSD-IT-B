@@ -5,7 +5,78 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register Here</title>
 </head>
+<style>
+    .container{
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+    }
+    .register{
+        width: 50%;
+        height: 100vh;
+        background-color: aqua;
+        display: flex;
+        margin: auto;
+    }
+    @media (max-width: 786px) {
+          .container{
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .register{
+        width: 50%;
+        height: 100vh;
+        background-color: aqua;
+        display: flex;
+        margin: auto;
+    }
+    }
+</style>
 <body>
-   <h1>Register Here</h1> 
+    <div class="container">
+        <div class="register">
+         <br/>
+   <form method="post" action="register.jsp">
+         <h1>Register Here</h1> 
+
+    <label for="name">Name:</label>
+    <input type="text" name="uname" placeholder="Enter user name" required/><br/>
+    <label for="name">Mobile Number:</label>
+    <input type="number" name="mobile" placeholder="Enter user Mobile number" required/>
+    <br/><label for="name">Email</label>
+    <input type="email" name="email" placeholder="Enter user Email" required/> 
+    <br/><label for="dob" required>Date of Birth:</label>
+    <input type="date" name="dob"/>  
+    <br/><label for="name">Gender:</label>
+    <input type="radio" name="gender" value="M"/>Male
+    <input type="radio" name="gender" value="F"/>FeMale
+    <br/><label for="branch">Branch:</label>
+    <select name="branch" multiple>
+        <option value="CSE">CSE</option>
+        <option value="IT">IT</option>
+        <option value="ECE">ECE</option>
+        <option value="CSE-AIML">CSE-AIML</option>
+        <option value="CSE-DS">CSE-DS</option>
+    </select>
+    <br/><label for="sem">Semester:</label>
+    <select name="sem">
+        <option value="I">I</option>
+        <option value="III">III</option>
+        <option value="V">V</option>
+        <option value="VII">VII</option>
+        
+    </select>
+    <BR/>
+    <label for="file">Upload 12th Marksheet</label>
+    <input type="file"name="resume"/>
+    <BR/>
+<input type="submit" value="Register"/>
+<input type="reset" value="Reset"/>
+</form>
+        </div>
+    </div>
+   
 </body>
 </html>
