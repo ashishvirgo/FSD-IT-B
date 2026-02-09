@@ -1,0 +1,17 @@
+.card {
+  color: red;
+  text-align: center;
+  background-color: #0ff;
+  border: 5px solid #00f;
+  border-radius: 10px;
+  width: 400px;
+  height: 400px;
+  margin: auto;
+  padding: 25px;
+}
+
+.booklist {
+  flex-wrap: wrap;
+  display: flex;
+}
+/*# sourceMappingURL=BOOK-NPM-APP.aa436662.css.map */
